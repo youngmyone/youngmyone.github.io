@@ -272,7 +272,7 @@
                 
               
 
-              <time title="创建时间：2019-09-05 15:39:41 / 修改时间：20:05:28" itemprop="dateCreated datePublished" datetime="2019-09-05T15:39:41+08:00">2019-09-05</time>
+              <time title="创建时间：2019-09-05 15:39:41 / 修改时间：21:04:18" itemprop="dateCreated datePublished" datetime="2019-09-05T15:39:41+08:00">2019-09-05</time>
             </span>
           
             
@@ -291,7 +291,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="1-安装hexo"><a href="#1-安装hexo" class="headerlink" title="1. 安装hexo"></a>1. 安装hexo</h1><h2 id="首先什么是Hexo"><a href="#首先什么是Hexo" class="headerlink" title="首先什么是Hexo"></a>首先什么是Hexo</h2><p>Hexo是一个快捷、简洁、高效的<strong>博客框架</strong>。Hexo使用Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+          <h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><h2 id="首先什么是Hexo"><a href="#首先什么是Hexo" class="headerlink" title="首先什么是Hexo"></a>首先什么是Hexo</h2><p>Hexo是一个快捷、简洁、高效的<strong>博客框架</strong>。Hexo使用Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <p>详细的可以查看<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a>。</p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>前提：</p>
 <ul>
@@ -305,19 +305,60 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init hexo_blog</span><br><span class="line">$ cd hexo_blog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 
 <p>完成之后，hexo_blog文件夹目录如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml				// 网站的配置信息</span><br><span class="line">├── package.json			// 应用程序的信息，如果不是深度用户，一般不用修改</span><br><span class="line">├── scaffolds				// 模板文件夹，Hexo根据scaffold来建立文件</span><br><span class="line">├── source					// 存放用户资源的地方</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts				// 重要，自己创建的文章放在这个文件夹中</span><br><span class="line">└── themes					// 主题文件夹，配置的主题放在这个文件夹中</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml				// 网站的配置信息</span><br><span class="line">├── package.json			// 应用程序的信息，如果不是深度用户，一般不用修改</span><br><span class="line">├── scaffolds				// 模板文件夹，Hexo根据scaffold来建立文件</span><br><span class="line">├── source				// 存放用户资源的地方</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts				// 重要，自己创建的文章放在这个文件夹中</span><br><span class="line">└── themes				// 主题文件夹，配置的主题放在这个文件夹中</span><br></pre></td></tr></table></figure>
 
 <h2 id="生成"><a href="#生成" class="headerlink" title="生成"></a>生成</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g	# hexo generate的简写，用于生成网站文件</span><br><span class="line">$ hexo s	# hexo server的简写，用于启动网站服务</span><br></pre></td></tr></table></figure>
 
-<p>启动成功，如下图所示<br><img src="./hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1.png" alt="启动服务"></p>
+<p>启动成功，如下图所示</p>
+<img src="/2019/09/05/hexo-github搭建个人博客/启动服务.png" title="启动服务">
 
+<p>在浏览器上访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ，出现下图则表示博客搭建成功。当然这还只是基本雏形。</p>
+<img src="/2019/09/05/hexo-github搭建个人博客/首页.jpg" title="首页">
 
-<p>在浏览器上访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ，出现下图则表示博客搭建成功。当然这还只是基本雏形。<br><img src="hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%5C%E9%A6%96%E9%A1%B5.jpg" alt></p>
 <p><strong>注意</strong>：如果浏览器一直在加载中，可能是因为端口被其他应用占用，需要修改端口。</p>
 <hr>
-<h1 id="2-配置GitHub"><a href="#2-配置GitHub" class="headerlink" title="2. 配置GitHub"></a>2. 配置GitHub</h1><h2 id="创建github仓库"><a href="#创建github仓库" class="headerlink" title="创建github仓库"></a>创建github仓库</h2><p>上面建站完成后，还只是在本地上能够查看，下面我们将其上传到github上，能够进行互联网访问。</p>
+<h1 id="配置GitHub"><a href="#配置GitHub" class="headerlink" title="配置GitHub"></a>配置GitHub</h1><h2 id="创建github仓库"><a href="#创建github仓库" class="headerlink" title="创建github仓库"></a>创建github仓库</h2><p>上面建站完成后，还只是在本地上能够查看，下面我们将其上传到github上，能够进行互联网访问。</p>
 <p>首先得有github账号，然后登录github，新建一个<strong><font color="#ff00ff">你的用户名.github.io</font></strong>的仓库。比如，你的用户名是test，那么这个仓库名就是test.github.io，其他名称都是无效的。所以访问的地址也就是test.github.io。</p>
-<h2 id="配置SSH-key"><a href="#配置SSH-key" class="headerlink" title="配置SSH key"></a>配置SSH key</h2>
+<h2 id="配置SSH-key"><a href="#配置SSH-key" class="headerlink" title="配置SSH key"></a>配置SSH key</h2><h3 id="首先配置用户信息"><a href="#首先配置用户信息" class="headerlink" title="首先配置用户信息"></a>首先配置用户信息</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;注册的用户名&quot;</span><br><span class="line">$ git config --global user.email &quot;注册的用邮箱&quot;</span><br></pre></td></tr></table></figure>
+
+<p>然后打开Git Bash，试试能不能进入到.ssh文件夹中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/.ssh</span><br></pre></td></tr></table></figure>
+
+<p>如果显示没有该文件或者目录，那么说明你是第一次使用git。</p>
+<h3 id="生成SSH-key"><a href="#生成SSH-key" class="headerlink" title="生成SSH key"></a>生成SSH key</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C &quot;注册的邮件地址&quot;</span><br></pre></td></tr></table></figure>
+
+<p>之后会提示你输入密码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty for no passphrase):&lt;设置密码&gt;</span><br><span class="line">Enter same passphrase again:&lt;再次输入密码&gt;</span><br></pre></td></tr></table></figure>
+
+<p>提示：输入密码的时候看不到。</p>
+<p>如果看到这样的画面就说明设置ssh key成功：</p>
+<img src="/2019/09/05/hexo-github搭建个人博客/SSH_key.jpg" title="ssh_key">
+
+<h3 id="添加SSH-key到GitHub"><a href="#添加SSH-key到GitHub" class="headerlink" title="添加SSH key到GitHub"></a>添加SSH key到GitHub</h3><p>在C:/Users/你的用户名/.ssh文件夹中找到id_rsa.pub文件，用记事本打开复制全部内容。</p>
+<p>登录GitHub，找到下图所示地方：</p>
+<img src="/2019/09/05/hexo-github搭建个人博客/github_ssh.jpg" title="github_ssh">
+
+<p>Title随便写，Key的部分就是刚刚复制id_rsa.pub的全部内容。</p>
+<p><strong>测试是否成功</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<h3 id="将hexo博客部署到GitHub上"><a href="#将hexo博客部署到GitHub上" class="headerlink" title="将hexo博客部署到GitHub上"></a>将hexo博客部署到GitHub上</h3><ol>
+<li><p>上传前的配置</p>
+<p>在博客目录（上面创建的hexo_blog目录）下找到_config.yml配置文件。找到deploy配置部分：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:注册名/注册名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<p>记得冒号后面又空格。</p>
+<p>安装插件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>记得命令用Git Bash操作，否则提示权限被拒绝。</p>
+</li>
+<li><p>输入hexo d提交部署，即完成上传功能。会让你输入配置SSH时输入的密码。</p>
+</li>
+<li><p>输入你的注册名.github.io访问看看是否和本地相同。有时候需要浏览器多刷新几次才会显示出效果。</p>
+</li>
+</ol>
+
         
       
     </div>
